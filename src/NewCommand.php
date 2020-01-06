@@ -17,27 +17,18 @@ use ZipArchive;
 class NewCommand extends Command
 {
     protected const LARAVEL_PACKAGES = [
-        'telescope' => 'laravel/telescope',
-        'socialite' => 'laravel/socialite',
-        'horizon' => 'laravel/horizon',
-        'cashier' => 'laravel/cashier',
-        'passport' => 'laravel/passport',
-        'scout' => 'laravel/scout',
-        'nexmo' => 'laravel/nexmo-notification-channel',
-        'slack' => 'laravel/slack-notification-channel',
+
     ];
 
     protected const LARAVEL_DEV_PACKAGES = [
         'ui' => 'laravel/ui',
-        'dusk' => 'laravel/dusk',
+        "dsnr-preset" => 'dsnr/dsnr-laravel-preset'
+
     ];
 
     protected const LARAVEL_PACKAGES_INSTALL_COMMAND = [
-        'telescope' => 'telescope:install',
-        'horizon' => 'horizon:install',
-        'passport' => 'passport:install',
-        'dusk' => 'dusk:install',
-        'scout' => 'vendor:publish --provider="Laravel\Scout\ScoutServiceProvider"',
+        'ui' => 'ui dsnr',
+
     ];
 
     /**
